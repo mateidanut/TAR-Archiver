@@ -1,5 +1,6 @@
 # TAR-Archiver
 C program for creating an archive, listing elements and extracting them
+
 The Makefile builds the program creating an executable called tarArchiver
 
 The program needs 2 specific files in order to work:
@@ -15,10 +16,10 @@ The program accepts 4 kinds of commands from the standard input:
 
 3. get archivename filename  - extracts the content of the "filename" file; because this command displays the content of the file at standard output, for binary files, it should be used as follows:  
 
-echo -e “get my_archive my_file.jpg\nquit” | ./tarArchiver > result.jpg
+      echo -e “get my_archive my_file.jpg\nquit” | ./tarArchiver > result.jpg
 
-This way, the output of the program is redirected to a file on disk which is equivalent to extracting the file. 
-This command leaves the content of the archive unchanged.
+      This way, the output of the program is redirected to a file on disk which is equivalent to extracting the file. 
+      This command leaves the content of the archive unchanged.
 
 4. quit - exits the program
 
